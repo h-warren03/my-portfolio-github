@@ -394,8 +394,9 @@ button:focus-visible {
   box-shadow: 8px 8px;
 }
 
-.card-works h2{
+.card-works-title{
   font-family: 'mighty-slab', serif;
+  min-width: 168px;
 }
 
 .test-card-container {

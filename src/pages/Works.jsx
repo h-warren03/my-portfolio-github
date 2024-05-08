@@ -40,14 +40,16 @@ function Works() {
     <>
           <h1 className='header-1'>My Works</h1>
       <div className='card-works'>
+      <div className='card-works-title'>
         <h2>Web Work</h2>
+      </div>
         <div className="test-card-container negative-margin">
           {webProjectList.map((project, index) => {
             return (
               <div className="test-card" key={index}>
                 <div
                   style={{
-                    backgroundImage: `url(${project.location})`
+                    backgroundImage: `url(${project.location})`,
                   }}
                 >
                   <h3>{project.title}</h3>
@@ -59,7 +61,9 @@ function Works() {
         </div>
         </div>
         <div className='card-works'>
-        <h2>Print Works</h2>
+        <div className='card-works-title'>
+          <h2>Print Works</h2>
+        </div>
         <div className="test-card-container negative-margin">
           {printProjectList.map((project, index) => {
             return (
